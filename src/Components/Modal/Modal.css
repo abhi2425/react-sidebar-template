@@ -1,0 +1,35 @@
+.overLay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.5);
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.displayModal {
+  z-index: 1000;
+  visibility: visible;
+}
+.modalContainer {
+  display: block;
+  width: 50rem;
+  height: 40rem;
+  background-color: whitesmoke;
+  position: relative;
+}
+.closeModal {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: red;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+}

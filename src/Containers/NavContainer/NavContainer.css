@@ -1,0 +1,44 @@
+.navContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-row-gap: 2rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.7);
+  width: 40rem;
+  z-index: 100;
+  box-sizing: border-box;
+  transition: all 0.7s ease;
+  transform: translateX(-50rem);
+}
+.display {
+  transform: translateX(0);
+}
+.navHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.navHeader h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.15rem;
+}
+.navHeader span {
+  color: rgb(88, 158, 228);
+}
+.closeNav {
+  font-size: 3rem;
+  font-weight: 600;
+  color: red;
+  align-self: center;
+  background: transparent;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+}

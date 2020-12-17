@@ -1,0 +1,51 @@
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+.app main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.navButton {
+  display: inline-block;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  font-size: 3.5rem;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  color: rgb(92, 112, 223);
+  transition: all 0.7s ease;
+  animation: bounce 2s ease-in infinite;
+  cursor: pointer;
+}
+.hideBtn {
+  display: none;
+}
+.showModal {
+  display: inline-block;
+  font-size: 2rem;
+  border: none;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0.8rem;
+}

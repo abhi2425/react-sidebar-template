@@ -1,0 +1,18 @@
+.socialContainer {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 2rem 1.5rem;
+}
+.socialLink {
+  display: inline-block;
+  align-self: center;
+  margin-right: 1.2rem;
+}
+.socialLink--route {
+  text-decoration: none;
+}
+.socialIcons {
+  color: rgb(78, 159, 240);
+  font-size: 2rem;
+}
