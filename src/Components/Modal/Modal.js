@@ -10,7 +10,9 @@ const Modal = ({ children }) => {
       className={showModal ? "overLay displayModal" : "overLay"}
       onClick={hideModalHandler}
     >
-      <div className="modalContainer">
+      <div
+        className={showModal ? "modalContainer displayModal" : "modalContainer"}
+      >
         <button className="closeModal" onClick={hideModalHandler}>
           <GrClose />
         </button>
